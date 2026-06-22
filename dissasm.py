@@ -86,7 +86,7 @@ def disasm(file):
             inst = getInstruction(opcode)
             output.append(inst)
     outputLines = "\n".join(output)
-    with open("dissasm.asm", "w") as f:
+    with open("disasm.asm", "w") as f:
         f.writelines(outputLines)
     return
     
